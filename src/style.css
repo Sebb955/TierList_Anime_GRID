@@ -1,0 +1,77 @@
+/* ---- CSS grid ---- */
+body {
+   background: #edde9c;
+}
+
+.anime {
+   width: 50%;
+   height: 100%;
+   display: grid; 
+   grid-template-columns: [GOAT] 1fr [S] 1fr [A] 1fr;
+   grid-auto-rows: auto;
+   grid-auto-flow: dense;
+   grid-gap: 20px;
+}
+
+.anime > a {
+   background-color: #ede5bf;
+   border: 5px ridge black;
+   border-radius: 17px;
+}
+
+img, h1 {
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 10px;
+}
+
+.title {
+   text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd, 2px 2px 2px rgba(206,89,55,0);
+   color: #bc2e1e;
+}
+
+[data-type="GOAT"] {
+   grid-column: GOAT;
+}
+
+[data-type="S"] {
+   grid-column: S;
+}
+
+[data-type="A"] {
+   grid-column: A;
+}
+
+/* ---- CSS Overlay ---- */
+
+.overlay {
+   opacity: 0.8;
+   text-align: center;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   padding: 0 8px;
+   box-sizing: border-box;
+   background-color: #000;
+   overflow: hidden;
+}
+
+.overlayImg {
+   width: 60%;
+   margin: auto;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+
+ *, *::after, *::before {
+   box-sizing: border-box;
+ }
